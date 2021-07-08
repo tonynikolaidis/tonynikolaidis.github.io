@@ -1,0 +1,44 @@
+#footer {
+    /*height: 100%;*/
+    width: 100%;
+    background-color: red;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#footer-background {
+    /*height: calc(100vh + 3px);*/
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #212121;
+}
+
+#footer-row {
+    padding: 5px 5px;
+}
+
+.footer-text {
+    font-family: "SF Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 97.19%;
+
+    letter-spacing: -0.02em;
+
+    color: #FAFAFA;
+}
+
+#footer-copyright {
+
+}
+
+#footer-github {
+    margin-right: 30px;
+}
+
+#footer-arrow {
+
+}

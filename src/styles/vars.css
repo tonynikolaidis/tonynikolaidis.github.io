@@ -1,0 +1,32 @@
+:root {
+    --sm: 576px;
+    --sm-mul: 0.4;
+
+    --md: 768px;
+    --md-mul: 0.5333;
+
+    --l: 992px;
+    --l-mul: 0.6888;
+
+    --xl: 1200px;
+    --xl-mul: 0.8333;
+
+    --xxl: 1440px;
+    --xxl-mul: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,52 @@
+#about {
+    /*height: 100%;*/
+    width: 100%;
+    background-color: red;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#about-background {
+    height: calc(100vh + 3px);
+    width: 100%;
+    position: relative;
+    background-color: #FAFAFA;
+}
+
+
+
+#portfolio {
+    /*height: 100%;*/
+    width: 100%;
+    background-color: red;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#portfolio-background {
+    height: calc(100vh + 3px);
+    width: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+
+
+
+#contact {
+    /*height: 100%;*/
+    width: 100%;
+    background-color: red;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#contact-background {
+    height: calc(100vh + 3px);
+    width: 100%;
+    position: relative;
+    background-color: lightblue;
+}
+
