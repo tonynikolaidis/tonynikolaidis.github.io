@@ -5,7 +5,7 @@
 #home {
     height: 100vh;
     width: 100%;
-    background-color: #212121;
+    /*background-color: #212121;*/
 
     position: relative;
     /*overflow: hidden;*/
@@ -15,7 +15,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    /*background: linear-gradient(291.34deg, #212121 0%, #424242 100%);*/
+    background: linear-gradient(291.34deg, #212121 0%, #424242 100%);
 }
 
 @keyframes home-particles {
@@ -149,7 +149,7 @@
 }
 
 #home-greeting h2 {
-    font-family: "SF Pro Text", sans-serif;
+    font-family: "SF Pro Text", 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 108.69%;
@@ -161,7 +161,7 @@
 }
 
 #home-name h1 {
-    font-family: "SF Pro Text", sans-serif;
+    font-family: "SF Pro Text", 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: 89.69%;
@@ -178,7 +178,7 @@
 }
 
 #home-attributes h2 {
-    font-family: "SF Mono", monospace;
+    font-family: "SF Mono", 'Roboto Mono', monospace;
     font-style: normal;
     font-weight: normal;
     line-height: 108.69%;

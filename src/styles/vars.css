@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
 :root {
     --sm: 576px;
     --sm-mul: 0.4;
@@ -29,4 +32,58 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+
+    background-color: #FAFAFA;
+}
+
+.highlight-primary {
+    font-weight: bold;
+    color: #FF6D00;
+
+}
+
+.highlight-secondary {
+    font-weight: bold;
+    color: #212121;
+}
+
+.view-on-github {
+    font-family: "SF Mono", 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.view-on-github span img {
+    transition-duration: 200ms;
+}
+
+@media (min-width: 576px) {
+    .view-on-github:hover {
+        text-decoration-line: underline;
+    }
+
+    .view-on-github:hover span img {
+        transform: translateX(5px);
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }

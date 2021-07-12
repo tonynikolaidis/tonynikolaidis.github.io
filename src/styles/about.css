@@ -1,52 +1,1277 @@
 #about {
-    /*height: 100%;*/
     width: 100%;
-    background-color: red;
-
     position: relative;
-    /*overflow: hidden;*/
 }
 
 #about-background {
-    height: calc(100vh + 3px);
+    /*height: calc(100vh + 3px);*/
     width: 100%;
     position: relative;
     background-color: #FAFAFA;
 }
 
-
-
-#portfolio {
-    /*height: 100%;*/
-    width: 100%;
-    background-color: red;
-
-    position: relative;
-    /*overflow: hidden;*/
+#about-container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-#portfolio-background {
-    height: calc(100vh + 3px);
-    width: 100%;
-    position: relative;
-    background-color: lightcoral;
+#about-studies {
+
 }
 
+#about-passions {
 
-
-#contact {
-    /*height: 100%;*/
-    width: 100%;
-    background-color: red;
-
-    position: relative;
-    /*overflow: hidden;*/
 }
 
-#contact-background {
-    height: calc(100vh + 3px);
-    width: 100%;
-    position: relative;
-    background-color: lightblue;
+#about-hobbies {
+
 }
 
+.about-text-and-icon {
+    height: calc(100vh / 3);
+    z-index: 1;
+
+    padding: 0 !important;
+}
+
+.about-icon {
+    margin: 2vw 0 !important;
+    padding: 0 2vw !important;
+}
+
+.about-icon img {
+    height: 15vw;
+    width: 15vw;
+}
+
+.about-text {
+    font-family: "SF Pro Text", 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+
+    color: #424242;
+
+    padding: 0 2vw !important;
+}
+
+br {
+    display: none;
+}
+
+.about-emoji {
+    height: 5vw;
+    width: 5vw;
+}
+
+/* ------------------------- */
+/* --------- LINES --------- */
+/* ------------------------- */
+
+#about-lines {
+    position: absolute;
+    left: -10vw;
+    top: 15vh;
+}
+
+#about-line-far-back {
+    background-image: url("../../public/about/Studies/line-far-back.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 149px;
+    width: calc(149px * 98 / 149);
+
+    left: 39px;
+    top: 30px;
+
+    z-index: 0;
+}
+
+#about-line-back-short {
+    background-image: url("../../public/about/Studies/line-back-short.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 80px;
+    width: calc(80px * 58 / 80);
+
+    left: 46px;
+    top: 134px;
+
+    z-index: 0;
+}
+
+#about-line-back-long {
+    background-image: url("../../public/about/Studies/line-back-long.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 119px;
+    width: calc(119px * 80 / 119);
+
+    left: 11px;
+    top: 31px;
+
+    z-index: 0;
+}
+
+#about-line-front {
+    background-image: url("../../public/about/Studies/line-front.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 229px;
+    width: calc(229px * 144/229);
+
+    left: 0;
+    top: 0;
+
+    z-index: 0;
+}
+
+/* ------------------------- */
+/* --------- CUBES --------- */
+/* ------------------------- */
+
+#about-cubes {
+    position: absolute;
+    right: 35vw;
+    top: 35vh;
+}
+
+#about-cube-big {
+    background-image: url("../../public/about/Passions/cube.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 399px;
+    width: 399px;
+
+    /* width: 399px;
+       height: 399px;
+       left: 997px;
+       top: 237px; */
+
+    left: 25px;
+    top: 0;
+}
+
+@keyframes about-cube-medium-float {
+    0% {transform: translateY(calc(10px)) rotate(-30deg)}
+    50% {transform: translateY(calc(-10px)) rotate(-30deg)}
+    100% {transform: translateY(calc(10px)) rotate(-30deg)}
+}
+
+#about-cube-medium {
+    background-image: url("../../public/about/Passions/cube.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 96px;
+    width: 96px;
+
+    /* width: 96px;
+       height: 96px;
+       left: 1033px;
+       top: 505px; */
+
+    left: 61px;
+    top: 268px;
+
+    animation-name: about-cube-medium-float;
+    animation-duration: 5s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes about-cube-small-float {
+    0% {transform: translateY(calc(5px)) rotate(15deg)}
+    50% {transform: translateY(calc(-5px)) rotate(15deg)}
+    100% {transform: translateY(calc(5px)) rotate(15deg)}
+}
+
+#about-cube-small-left {
+    background-image: url("../../public/about/Passions/cube.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 67px;
+    width: 67px;
+
+    /* width: 67px;
+       height: 67px;
+       left: 972px;
+       top: 490px; */
+
+    left: 0;
+    top: 253px;
+
+    animation-name: about-cube-small-float;
+    animation-duration: 5s;
+    animation-delay: 250ms;
+    animation-iteration-count: infinite;
+}
+
+#about-cube-small-right {
+    background-image: url("../../public/about/Passions/cube.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 67px;
+    width: 67px;
+
+    /* width: 49px;
+       height: 49px;
+       left: 1039px;
+       top: 451px; */
+
+    left: 67px;
+    top: 214px;
+
+    animation-name: about-cube-small-float;
+    animation-duration: 5s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+/* ----------------------------- */
+/* --------- TRIANGLES --------- */
+/* ----------------------------- */
+
+#about-triangles {
+    position: absolute;
+    left: -4vw;
+    top: 62vh;
+}
+
+#about-triangle-back {
+    background-image: url("../../public/about/Hobbies/triangle-back.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+
+    width: 299px;
+    height: 259px;
+
+    left: 20px;
+
+    transform: rotate(30deg);
+}
+
+#about-triangle-middle {
+    background-image: url("../../public/about/Hobbies/triangle-middle.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    width: 299px;
+    height: 259px;
+
+    left: 10px;
+
+    transform: rotate(15deg);
+}
+
+#about-triangle-front {
+    background-image: url("../../public/about/Hobbies/triangle-front.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    width: 299px;
+    height: 259px;
+
+    left: 0;
+}
+
+@media (max-width: 575px) {
+    #about-studies {
+        padding: 0 10vw 0 0 !important;
+        margin: 0 -7.1vw 0 0 !important;
+    }
+
+    #about-passions {
+        padding: 0 0 0 4vw !important;
+        margin: 0 -7.1vw 0 0 !important;
+    }
+
+    #about-hobbies {
+        padding: 0 10vw 0 0 !important;
+        margin: 0 -7.1vw 0 0 !important;
+    }
+
+    #about-lines {
+        transform: scale(0.8);
+    }
+
+    #about-cubes {
+        transform: scale(0.5);
+    }
+
+    #about-triangles {
+        transform: scale(0.5);
+    }
+}
+
+@media (min-width: 576px) {
+    .about-icon {
+        margin: calc(19px * var(--sm-mul)) 0 !important;
+        padding: 0 calc(12px * var(--sm-mul)) !important;
+    }
+
+    .about-icon img {
+        height: calc(98px * var(--sm-mul));
+        width: calc(98px * var(--sm-mul));
+    }
+
+    .about-text {
+        font-size: calc(36px  * var(--sm-mul));
+        line-height: 125%;
+        letter-spacing: -0.03em;
+
+        padding: 0 calc(12px * var(--sm-mul)) !important;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .about-emoji {
+        height: calc(40px * var(--sm-mul));
+        width: calc(40px * var(--sm-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- LINES --------- */
+    /* ------------------------- */
+    #about-lines {
+        position: absolute;
+        left: calc(3/12 * 100vw - 3/12 * var(--sm));
+        top: calc(33.33vh - 235px * var(--sm-mul));
+    }
+
+    #about-line-far-back {
+        position: absolute;
+
+        height: calc(235px * var(--sm-mul));
+        width: calc(235px * var(--sm-mul) * 154 / 235);
+
+        left: calc(169px * var(--sm-mul));
+        top: calc(47px * var(--sm-mul));
+    }
+
+    #about-line-back-short {
+        position: absolute;
+
+        height: calc(126px * var(--sm-mul));
+        width: calc(126px * var(--sm-mul) * 92 / 126);
+
+        left: calc(180px * var(--sm-mul));
+        top: calc(211px * var(--sm-mul));
+    }
+
+    #about-line-back-long {
+        position: absolute;
+
+        height: calc(187px * var(--sm-mul));
+        width: calc(187px * var(--sm-mul) * 126 / 187);
+
+        left: calc(125px * var(--sm-mul));
+        top: calc(49px * var(--sm-mul));
+    }
+
+    #about-line-front {
+        position: absolute;
+
+        height: calc(361px * var(--sm-mul));
+        width: calc(361px * var(--sm-mul) * 227 / 361);
+
+        left: calc(108px * var(--sm-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- CUBES --------- */
+    /* ------------------------- */
+    #about-cubes {
+        position: absolute;
+        left: calc(9/12 * 100vw - 9/12 * var(--sm));
+        top: calc(50vh - var(--sm) / 1.6 / 2);
+        right: 0;
+    }
+
+    #about-cube-big {
+        position: absolute;
+
+        height: calc(399px * var(--sm-mul));
+        width: calc(399px * var(--sm-mul));
+
+        left: calc(997px * var(--sm-mul));
+        top: calc(237px * var(--sm-mul));
+    }
+
+    @keyframes about-cube-medium-float {
+        0% {transform: translateY(calc(10px * var(--sm-mul))) rotate(-30deg)}
+        50% {transform: translateY(calc(-10px * var(--sm-mul))) rotate(-30deg)}
+        100% {transform: translateY(calc(10px * var(--sm-mul))) rotate(-30deg)}
+    }
+
+    #about-cube-medium {
+        position: absolute;
+
+        height: calc(96px * var(--sm-mul));
+        width: calc(96px * var(--sm-mul));
+
+        left: calc(1033px * var(--sm-mul));
+        top: calc(505px * var(--sm-mul));
+
+        animation-name: about-cube-medium-float;
+        animation-duration: 5s;
+        animation-delay: 500ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes about-cube-small-float {
+        0% {transform: translateY(calc(5px * var(--sm-mul))) rotate(15deg)}
+        50% {transform: translateY(calc(-5px * var(--sm-mul))) rotate(15deg)}
+        100% {transform: translateY(calc(5px * var(--sm-mul))) rotate(15deg)}
+    }
+
+    #about-cube-small-left {
+        position: absolute;
+
+        height: calc(67px * var(--sm-mul));
+        width: calc(67px * var(--sm-mul));
+
+        left: calc(972px * var(--sm-mul));
+        top: calc(490px * var(--sm-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    #about-cube-small-right {
+        position: absolute;
+
+        height: calc(67px * var(--sm-mul));
+        width: calc(67px * var(--sm-mul));
+
+        left: calc(1039px * var(--sm-mul));
+        top: calc(451px * var(--sm-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+    }
+
+    /* ----------------------------- */
+    /* --------- TRIANGLES --------- */
+    /* ----------------------------- */
+    #about-triangles {
+        position: absolute;
+        left: calc(4/12 * 100vw - 4/12 * var(--sm));
+        top: calc(66.66vh - 80px * var(--sm-mul));
+    }
+
+    #about-triangle-back {
+        position: absolute;
+
+
+        width: calc(299px * var(--sm-mul));
+        height: calc(259px * var(--sm-mul));
+
+        left: calc(277px * var(--sm-mul));
+    }
+
+    #about-triangle-middle {
+        position: absolute;
+
+        width: calc(299px * var(--sm-mul));
+        height: calc(259px * var(--sm-mul));
+
+        left: calc(267px * var(--sm-mul));
+    }
+
+    #about-triangle-front {
+        position: absolute;
+
+        width: calc(299px * var(--sm-mul));
+        height: calc(259px * var(--sm-mul));
+
+        left: calc(257px * var(--sm-mul));
+    }
+}
+
+@media (min-width: 768px) {
+    .about-icon {
+        margin: calc(19px * var(--md-mul)) 0 !important;
+        padding: 0 calc(12px * var(--md-mul)) !important;
+    }
+
+    .about-icon img {
+        height: calc(98px * var(--md-mul));
+        width: calc(98px * var(--md-mul));
+    }
+
+    .about-text {
+        font-size: calc(36px  * var(--md-mul));
+        line-height: 125%;
+        letter-spacing: -0.03em;
+
+        padding: 0 calc(12px * var(--md-mul)) !important;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .about-emoji {
+        height: calc(40px * var(--md-mul));
+        width: calc(40px * var(--md-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- LINES --------- */
+    /* ------------------------- */
+    #about-lines {
+        position: absolute;
+        left: calc(3/12 * 100vw - 3/12 * var(--md));
+        top: calc(33.33vh - 235px * var(--md-mul));
+    }
+
+    #about-line-far-back {
+        position: absolute;
+
+        height: calc(235px * var(--md-mul));
+        width: calc(235px * var(--md-mul) * 154 / 235);
+
+        left: calc(169px * var(--md-mul));
+        top: calc(47px * var(--md-mul));
+    }
+
+    #about-line-back-short {
+        position: absolute;
+
+        height: calc(126px * var(--md-mul));
+        width: calc(126px * var(--md-mul) * 92 / 126);
+
+        left: calc(180px * var(--md-mul));
+        top: calc(211px * var(--md-mul));
+    }
+
+    #about-line-back-long {
+        position: absolute;
+
+        height: calc(187px * var(--md-mul));
+        width: calc(187px * var(--md-mul) * 126 / 187);
+
+        left: calc(125px * var(--md-mul));
+        top: calc(49px * var(--md-mul));
+    }
+
+    #about-line-front {
+        position: absolute;
+
+        height: calc(361px * var(--md-mul));
+        width: calc(361px * var(--md-mul) * 227 / 361);
+
+        left: calc(108px * var(--md-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- CUBES --------- */
+    /* ------------------------- */
+    #about-cubes {
+        position: absolute;
+        left: calc(9/12 * 100vw - 9/12 * var(--md));
+        top: calc(50vh - var(--md) / 1.6 / 2);
+        right: 0;
+    }
+
+    #about-cube-big {
+        position: absolute;
+
+        height: calc(399px * var(--md-mul));
+        width: calc(399px * var(--md-mul));
+
+        left: calc(997px * var(--md-mul));
+        top: calc(237px * var(--md-mul));
+    }
+
+    @keyframes about-cube-medium-float {
+        0% {transform: translateY(calc(10px * var(--md-mul))) rotate(-30deg)}
+        50% {transform: translateY(calc(-10px * var(--md-mul))) rotate(-30deg)}
+        100% {transform: translateY(calc(10px * var(--md-mul))) rotate(-30deg)}
+    }
+
+    #about-cube-medium {
+        position: absolute;
+
+        height: calc(96px * var(--md-mul));
+        width: calc(96px * var(--md-mul));
+
+        left: calc(1033px * var(--md-mul));
+        top: calc(505px * var(--md-mul));
+
+        animation-name: about-cube-medium-float;
+        animation-duration: 5s;
+        animation-delay: 500ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes about-cube-small-float {
+        0% {transform: translateY(calc(5px * var(--md-mul))) rotate(15deg)}
+        50% {transform: translateY(calc(-5px * var(--md-mul))) rotate(15deg)}
+        100% {transform: translateY(calc(5px * var(--md-mul))) rotate(15deg)}
+    }
+
+    #about-cube-small-left {
+        position: absolute;
+
+        height: calc(67px * var(--md-mul));
+        width: calc(67px * var(--md-mul));
+
+        left: calc(972px * var(--md-mul));
+        top: calc(490px * var(--md-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    #about-cube-small-right {
+        position: absolute;
+
+        height: calc(67px * var(--md-mul));
+        width: calc(67px * var(--md-mul));
+
+        left: calc(1039px * var(--md-mul));
+        top: calc(451px * var(--md-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+    }
+
+    /* ----------------------------- */
+    /* --------- TRIANGLES --------- */
+    /* ----------------------------- */
+    #about-triangles {
+        position: absolute;
+        left: calc(4/12 * 100vw - 4/12 * var(--md));
+        top: calc(66.66vh - 80px * var(--md-mul));
+    }
+
+    #about-triangle-back {
+        position: absolute;
+
+
+        width: calc(299px * var(--md-mul));
+        height: calc(259px * var(--md-mul));
+
+        left: calc(277px * var(--md-mul));
+    }
+
+    #about-triangle-middle {
+        position: absolute;
+
+        width: calc(299px * var(--md-mul));
+        height: calc(259px * var(--md-mul));
+
+        left: calc(267px * var(--md-mul));
+    }
+
+    #about-triangle-front {
+        position: absolute;
+
+        width: calc(299px * var(--md-mul));
+        height: calc(259px * var(--md-mul));
+
+        left: calc(257px * var(--md-mul));
+    }
+}
+
+@media (min-width: 992px) {
+    .about-icon {
+        margin: calc(19px * var(--l-mul)) 0 !important;
+        padding: 0 calc(12px * var(--l-mul)) !important;
+    }
+
+    .about-icon img {
+        height: calc(98px * var(--l-mul));
+        width: calc(98px * var(--l-mul));
+    }
+
+    .about-text {
+        font-size: calc(36px  * var(--l-mul));
+        line-height: 125%;
+        letter-spacing: -0.03em;
+
+        padding: 0 calc(12px * var(--l-mul)) !important;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .about-emoji {
+        height: calc(40px * var(--l-mul));
+        width: calc(40px * var(--l-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- LINES --------- */
+    /* ------------------------- */
+    #about-lines {
+        position: absolute;
+        left: calc(3/12 * 100vw - 3/12 * var(--l));
+        top: calc(33.33vh - 235px * var(--l-mul));
+    }
+
+    #about-line-far-back {
+        position: absolute;
+
+        height: calc(235px * var(--l-mul));
+        width: calc(235px * var(--l-mul) * 154 / 235);
+
+        left: calc(169px * var(--l-mul));
+        top: calc(47px * var(--l-mul));
+    }
+
+    #about-line-back-short {
+        position: absolute;
+
+        height: calc(126px * var(--l-mul));
+        width: calc(126px * var(--l-mul) * 92 / 126);
+
+        left: calc(180px * var(--l-mul));
+        top: calc(211px * var(--l-mul));
+    }
+
+    #about-line-back-long {
+        position: absolute;
+
+        height: calc(187px * var(--l-mul));
+        width: calc(187px * var(--l-mul) * 126 / 187);
+
+        left: calc(125px * var(--l-mul));
+        top: calc(49px * var(--l-mul));
+    }
+
+    #about-line-front {
+        position: absolute;
+
+        height: calc(361px * var(--l-mul));
+        width: calc(361px * var(--l-mul) * 227 / 361);
+
+        left: calc(108px * var(--l-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- CUBES --------- */
+    /* ------------------------- */
+    #about-cubes {
+        position: absolute;
+        left: calc(9/12 * 100vw - 9/12 * var(--l));
+        top: calc(50vh - var(--l) / 1.6 / 2);
+        right: 0;
+    }
+
+    #about-cube-big {
+        position: absolute;
+
+        height: calc(399px * var(--l-mul));
+        width: calc(399px * var(--l-mul));
+
+        left: calc(997px * var(--l-mul));
+        top: calc(237px * var(--l-mul));
+    }
+
+    @keyframes about-cube-medium-float {
+        0% {transform: translateY(calc(10px * var(--l-mul))) rotate(-30deg)}
+        50% {transform: translateY(calc(-10px * var(--l-mul))) rotate(-30deg)}
+        100% {transform: translateY(calc(10px * var(--l-mul))) rotate(-30deg)}
+    }
+
+    #about-cube-medium {
+        position: absolute;
+
+        height: calc(96px * var(--l-mul));
+        width: calc(96px * var(--l-mul));
+
+        left: calc(1033px * var(--l-mul));
+        top: calc(505px * var(--l-mul));
+
+        animation-name: about-cube-medium-float;
+        animation-duration: 5s;
+        animation-delay: 500ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes about-cube-small-float {
+        0% {transform: translateY(calc(5px * var(--l-mul))) rotate(15deg)}
+        50% {transform: translateY(calc(-5px * var(--l-mul))) rotate(15deg)}
+        100% {transform: translateY(calc(5px * var(--l-mul))) rotate(15deg)}
+    }
+
+    #about-cube-small-left {
+        position: absolute;
+
+        height: calc(67px * var(--l-mul));
+        width: calc(67px * var(--l-mul));
+
+        left: calc(972px * var(--l-mul));
+        top: calc(490px * var(--l-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    #about-cube-small-right {
+        position: absolute;
+
+        height: calc(67px * var(--l-mul));
+        width: calc(67px * var(--l-mul));
+
+        left: calc(1039px * var(--l-mul));
+        top: calc(451px * var(--l-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+    }
+
+    /* ----------------------------- */
+    /* --------- TRIANGLES --------- */
+    /* ----------------------------- */
+    #about-triangles {
+        position: absolute;
+        left: calc(4/12 * 100vw - 4/12 * var(--l));
+        top: calc(66.66vh - 80px * var(--l-mul));
+    }
+
+    #about-triangle-back {
+        position: absolute;
+
+
+        width: calc(299px * var(--l-mul));
+        height: calc(259px * var(--l-mul));
+
+        left: calc(277px * var(--l-mul));
+    }
+
+    #about-triangle-middle {
+        position: absolute;
+
+        width: calc(299px * var(--l-mul));
+        height: calc(259px * var(--l-mul));
+
+        left: calc(267px * var(--l-mul));
+    }
+
+    #about-triangle-front {
+        position: absolute;
+
+        width: calc(299px * var(--l-mul));
+        height: calc(259px * var(--l-mul));
+
+        left: calc(257px * var(--l-mul));
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-icon {
+        margin: calc(19px * var(--xl-mul)) 0 !important;
+        padding: 0 calc(12px * var(--xl-mul)) !important;
+    }
+
+    .about-icon img {
+        height: calc(98px * var(--xl-mul));
+        width: calc(98px * var(--xl-mul));
+    }
+
+    .about-text {
+        font-size: calc(36px  * var(--xl-mul));
+        line-height: 125%;
+        letter-spacing: -0.03em;
+
+        padding: 0 calc(12px * var(--xl-mul)) !important;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .about-emoji {
+        height: calc(40px * var(--xl-mul));
+        width: calc(40px * var(--xl-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- LINES --------- */
+    /* ------------------------- */
+    #about-lines {
+        position: absolute;
+        left: calc(3/12 * 100vw - 3/12 * var(--xl));
+        top: calc(33.33vh - 235px * var(--xl-mul));
+    }
+
+    #about-line-far-back {
+        position: absolute;
+
+        height: calc(235px * var(--xl-mul));
+        width: calc(235px * var(--xl-mul) * 154 / 235);
+
+        left: calc(169px * var(--xl-mul));
+        top: calc(47px * var(--xl-mul));
+    }
+
+    #about-line-back-short {
+        position: absolute;
+
+        height: calc(126px * var(--xl-mul));
+        width: calc(126px * var(--xl-mul) * 92 / 126);
+
+        left: calc(180px * var(--xl-mul));
+        top: calc(211px * var(--xl-mul));
+    }
+
+    #about-line-back-long {
+        position: absolute;
+
+        height: calc(187px * var(--xl-mul));
+        width: calc(187px * var(--xl-mul) * 126 / 187);
+
+        left: calc(125px * var(--xl-mul));
+        top: calc(49px * var(--xl-mul));
+    }
+
+    #about-line-front {
+        position: absolute;
+
+        height: calc(361px * var(--xl-mul));
+        width: calc(361px * var(--xl-mul) * 227 / 361);
+
+        left: calc(108px * var(--xl-mul));
+    }
+
+    /* ------------------------- */
+    /* --------- CUBES --------- */
+    /* ------------------------- */
+    #about-cubes {
+        position: absolute;
+        left: calc(9/12 * 100vw - 9/12 * var(--xl));
+        top: calc(50vh - var(--xl) / 1.6 / 2);
+        right: 0;
+    }
+
+    #about-cube-big {
+        position: absolute;
+
+        height: calc(399px * var(--xl-mul));
+        width: calc(399px * var(--xl-mul));
+
+        left: calc(997px * var(--xl-mul));
+        top: calc(237px * var(--xl-mul));
+    }
+
+    @keyframes about-cube-medium-float {
+        0% {transform: translateY(calc(10px * var(--xl-mul))) rotate(-30deg)}
+        50% {transform: translateY(calc(-10px * var(--xl-mul))) rotate(-30deg)}
+        100% {transform: translateY(calc(10px * var(--xl-mul))) rotate(-30deg)}
+    }
+
+    #about-cube-medium {
+        position: absolute;
+
+        height: calc(96px * var(--xl-mul));
+        width: calc(96px * var(--xl-mul));
+
+        left: calc(1033px * var(--xl-mul));
+        top: calc(505px * var(--xl-mul));
+
+        animation-name: about-cube-medium-float;
+        animation-duration: 5s;
+        animation-delay: 500ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes about-cube-small-float {
+        0% {transform: translateY(calc(5px * var(--xl-mul))) rotate(15deg)}
+        50% {transform: translateY(calc(-5px * var(--xl-mul))) rotate(15deg)}
+        100% {transform: translateY(calc(5px * var(--xl-mul))) rotate(15deg)}
+    }
+
+    #about-cube-small-left {
+        position: absolute;
+
+        height: calc(67px * var(--xl-mul));
+        width: calc(67px * var(--xl-mul));
+
+        left: calc(972px * var(--xl-mul));
+        top: calc(490px * var(--xl-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    #about-cube-small-right {
+        position: absolute;
+
+        height: calc(67px * var(--xl-mul));
+        width: calc(67px * var(--xl-mul));
+
+        left: calc(1039px * var(--xl-mul));
+        top: calc(451px * var(--xl-mul));
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+    }
+
+    /* ----------------------------- */
+    /* --------- TRIANGLES --------- */
+    /* ----------------------------- */
+    #about-triangles {
+        position: absolute;
+        left: calc(4/12 * 100vw - 4/12 * var(--xl));
+        top: calc(66.66vh - 80px * var(--xl-mul));
+    }
+
+    #about-triangle-back {
+        position: absolute;
+
+
+        width: calc(299px * var(--xl-mul));
+        height: calc(259px * var(--xl-mul));
+
+        left: calc(277px * var(--xl-mul));
+    }
+
+    #about-triangle-middle {
+        position: absolute;
+
+        width: calc(299px * var(--xl-mul));
+        height: calc(259px * var(--xl-mul));
+
+        left: calc(267px * var(--xl-mul));
+    }
+
+    #about-triangle-front {
+        position: absolute;
+
+        width: calc(299px * var(--xl-mul));
+        height: calc(259px * var(--xl-mul));
+
+        left: calc(257px * var(--xl-mul));
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-icon {
+        margin: 19px 0 !important;
+    }
+
+    .about-icon img {
+        height: 98px;
+        width: 98px;
+    }
+
+    .about-text {
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.03em;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .about-emoji {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ------------------------- */
+    /* --------- LINES --------- */
+    /* ------------------------- */
+    #about-lines {
+        position: absolute;
+        left: calc(50vw - 1440px / 2);
+        top: calc(33.33vh - 235px);
+    }
+
+    #about-line-far-back {
+        position: absolute;
+
+        height: 235px;
+        width: calc(235px * 154 / 235);
+
+        left: 169px;
+        top: 47px;
+    }
+
+    #about-line-back-short {
+        position: absolute;
+
+        height: 126px;
+        width: calc(126px * 92 / 126);
+
+        left: 180px;
+        top: 211px;
+    }
+
+    #about-line-back-long {
+        position: absolute;
+
+        height: 187px;
+        width: calc(187px * 126 / 187);
+
+        left: 125px;
+        top: 49px;
+    }
+
+    #about-line-front {
+        position: absolute;
+
+        height: 361px;
+        width: calc(361px * 227 / 361);
+
+        left: 108px;
+    }
+
+    /* ------------------------- */
+    /* --------- CUBES --------- */
+    /* ------------------------- */
+    #about-cubes {
+        position: absolute;
+        left: calc(50vw - 1440px / 2);
+        top: calc(50vh - 900px / 2);
+        right: 0;
+    }
+
+    #about-cube-big {
+        position: absolute;
+
+        height: 399px;
+        width: 399px;
+
+        left: 997px;
+        top: 237px;
+    }
+
+    @keyframes about-cube-medium-float {
+        0% {transform: translateY(10px) rotate(-30deg)}
+        50% {transform: translateY(-10px) rotate(-30deg)}
+        100% {transform: translateY(10px) rotate(-30deg)}
+    }
+
+    #about-cube-medium {
+        position: absolute;
+
+        height: 96px;
+        width: 96px;
+
+        left: 1033px;
+        top: 505px;
+
+        animation-name: about-cube-medium-float;
+        animation-duration: 5s;
+        animation-delay: 500ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes about-cube-small-float {
+        0% {transform: translateY(5px) rotate(15deg)}
+        50% {transform: translateY(-5px) rotate(15deg)}
+        100% {transform: translateY(5px) rotate(15deg)}
+    }
+
+    #about-cube-small-left {
+        position: absolute;
+
+        height: 67px;
+        width: 67px;
+
+        left: 972px;
+        top: 490px;
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    #about-cube-small-right {
+        position: absolute;
+
+        height: 67px;
+        width: 67px;
+
+        left: 1039px;
+        top: 451px;
+
+        animation-name: about-cube-small-float;
+        animation-duration: 5s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+    }
+
+    /* ----------------------------- */
+    /* --------- TRIANGLES --------- */
+    /* ----------------------------- */
+    #about-triangles {
+        position: absolute;
+        left: calc(50vw - 1440px / 2);
+        top: calc(66.66vh - 80px);
+    }
+
+    #about-triangle-back {
+        position: absolute;
+
+        width: 299px;
+        height: 259px;
+
+        left: 277px;
+    }
+
+    #about-triangle-middle {
+        position: absolute;
+
+        width: 299px;
+        height: 259px;
+
+        left: 267px;
+    }
+
+    #about-triangle-front {
+        position: absolute;
+
+        width: 299px;
+        height: 259px;
+
+        left: 257px;
+    }
+}

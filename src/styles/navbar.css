@@ -21,7 +21,7 @@
 }
 
 .nav-link {
-    font-family: "SF Mono", monospace;
+    font-family: "SF Mono", 'Roboto Mono', monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
