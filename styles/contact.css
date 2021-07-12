@@ -1,0 +1,321 @@
+#contact {
+    /*height: 100%;*/
+    width: 100%;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#contact-background {
+    height: calc(100vh + 3px);
+    width: 100%;
+    position: relative;
+    /*background-color: lightblue;*/
+}
+
+#contact-background-shapes {
+    background-image: url("../public/contact/background-shapes.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    height: 120vw;
+    width: calc(120vw * 1172/750);
+
+    left: calc(50vw - 120vw/2 * 1172/750);
+    top: calc(50vh - 120vw/2);
+
+    z-index: 0;
+}
+
+#contact-content-container {
+    height: 100%;
+}
+
+#contact-header {}
+
+#contact-header h1 {
+    font-family: "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10vw;
+    line-height: 97.19%;
+    letter-spacing: -0.03em;
+
+    color: #212121;
+
+    z-index: 1;
+}
+
+.contact-info {}
+
+.contact-info p {
+    font-family: "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    line-height: 97.19%;
+    letter-spacing: -0.01em;
+
+    color: #424242;
+
+    z-index: 1;
+}
+
+.contact-info p span {}
+
+.contact-info p span img {
+    height: 7vw;
+    width: 7vw;
+}
+
+#contact-links {
+    max-width: 110px;
+    margin: 0 calc(50vw - 55px);
+}
+
+#contact-links a {
+    height: 25px;
+    position: relative;
+}
+
+.contact-link {
+    opacity: 1;
+
+    height: 25px;
+    width: 25px;
+}
+
+@media (min-width: 576px) {
+    #contact-background-shapes {
+        height: 750px;
+        width: calc(750px * 1172/750);
+
+        left: calc(50vw - 1440px/2 + 134px);
+        top: calc(50vh - 900px/2 + 106px);
+    }
+
+    #contact-header h1 {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(48px * var(--sm-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.03em;
+
+        color: #212121;
+    }
+
+    .contact-info {}
+
+    .contact-info p {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(18px * var(--sm-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.01em;
+
+        color: #424242;
+    }
+
+    .contact-info p span {}
+
+    .contact-info p span img {
+        height: 32px;
+        width: 32px;
+    }
+
+    #contact-links {
+        max-width: 130px;
+        margin: 0 calc(50vw - 65px);
+    }
+
+    #contact-links a {
+        height: 30px;
+        position: relative;
+    }
+
+    .contact-link {
+        opacity: 1;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact-link:hover {
+        opacity: .5;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact-header h1 {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(48px * var(--md-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.03em;
+
+        color: #212121;
+    }
+
+    .contact-info p {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(18px * var(--md-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.01em;
+
+        color: #424242;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact-header h1 {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(48px * var(--l-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.03em;
+
+        color: #212121;
+    }
+
+    .contact-info p {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(18px * var(--l-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.01em;
+
+        color: #424242;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact-background-shapes {
+        height: 750px;
+        width: calc(750px * 1172/750);
+
+        left: calc(50vw - 1440px/2 + 134px);
+        top: calc(50vh - 900px/2 + 106px);
+    }
+
+    #contact-header h1 {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(48px * var(--xl-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.03em;
+
+        color: #212121;
+    }
+
+    .contact-info {}
+
+    .contact-info p {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(18px * var(--xl-mul));
+        line-height: 97.19%;
+        letter-spacing: -0.01em;
+
+        color: #424242;
+    }
+
+    .contact-info p span {}
+
+    .contact-info p span img {
+        height: 32px;
+        width: 32px;
+    }
+
+    #contact-links {
+        max-width: 130px;
+        margin: 0 calc(50vw - 65px);
+    }
+
+    #contact-links a {
+        height: 30px;
+        position: relative;
+    }
+
+    .contact-link {
+        opacity: 1;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact-link:hover {
+        opacity: .5;
+    }
+}
+
+@media (min-width: 1440px) {
+    #contact-background-shapes {
+        height: 750px;
+        width: calc(750px * 1172/750);
+
+        left: calc(50vw - 1440px/2 + 134px);
+        top: calc(50vh - 900px/2 + 106px);
+    }
+
+    #contact-header h1 {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 97.19%;
+        letter-spacing: -0.03em;
+
+        color: #212121;
+    }
+
+    .contact-info {}
+
+    .contact-info p {
+        font-family: "SF Pro Text", 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 97.19%;
+        letter-spacing: -0.01em;
+
+        color: #424242;
+    }
+
+    .contact-info p span {}
+
+    .contact-info p span img {
+        height: 32px;
+        width: 32px;
+    }
+
+    #contact-links {
+        max-width: 130px;
+        margin: 0 calc(50vw - 65px);
+    }
+
+    #contact-links a {
+        height: 30px;
+        position: relative;
+    }
+
+    .contact-link {
+        opacity: 1;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact-link:hover {
+        opacity: .5;
+    }
+}
