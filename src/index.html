@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,7 +18,6 @@
 <header>
     <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark">
         <div class="container-fluid">
-            <!--            <a class="navbar-brand" href="#">Tony Nikolaidis</a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fixed-navbar"
                     aria-controls="fixed-navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,21 +26,17 @@
                 <ul class="navbar-nav d-flex">
                     <li class="nav-item">
                         <button id="nav-home" class="nav-link text-start active" onclick="scrollToHome()">Home</button>
-                        <!--                        <a id="nav-home" class="nav-link text-start active">Home</a>-->
                     </li>
                     <li class="nav-item">
                         <button id="nav-about" class="nav-link text-start" onclick="scrollToAbout()">About</button>
-                        <!--                        <a id="nav-about" class="nav-link text-start" onclick="">About</a>-->
                     </li>
                     <li class="nav-item">
                         <button id="nav-portfolio" class="nav-link text-start" onclick="scrollToPortfolio()">Portfolio
                         </button>
-                        <!--                        <a id="nav-portfolio" class="nav-link text-start" onclick="">Portfolio</a>-->
                     </li>
                     <li class="nav-item">
                         <button id="nav-contact" class="nav-link text-start" onclick="scrollToContact()">Contact
                         </button>
-                        <!--                        <a id="nav-contact" class="nav-link text-start" onclick="">Contact</a>-->
                     </li>
                 </ul>
             </div>
@@ -48,6 +45,8 @@
 </header>
 
 <div id="wrapper">
+
+    <!--    HOME-->
     <div id="home">
         <div id="home-background"></div>
         <div id="home-particles"></div>
@@ -84,30 +83,292 @@
             </a>
         </div>
     </div>
+    <!--    HOME-->
 
+    <!--    ABOUT-->
     <div id="about">
         <div id="about-background">
+            <div id="about-lines">
+                <div id="about-line-far-back"></div>
+                <div id="about-line-back-short"></div>
+                <div id="about-line-back-long"></div>
+                <div id="about-line-front"></div>
+            </div>
+            <div id="about-cubes">
+                <div id="about-cube-big"></div>
+                <div id="about-cube-medium"></div>
+                <div id="about-cube-small-left"></div>
+                <div id="about-cube-small-right"></div>
+            </div>
+            <div id="about-triangles">
+                <div id="about-triangle-back"></div>
+                <div id="about-triangle-middle"></div>
+                <div id="about-triangle-front"></div>
+            </div>
+            <div id="about-container" class="col">
+                <div id="about-studies" class="row">
+
+                    <div class="about-text-and-icon row align-items-end">
+                        <div class="col-3 about-icon text-end">
+                            <img src="../public/emojis/graduation-cap.png" alt="Graduation cap emoji">
+                        </div>
+                        <div class="col-9 about-text">
+                            I'm currently studying <br>
+                            <span class="highlight-primary"> Computer Science & Engineering </span>
+                            <span>
+                                <img class="about-emoji" src="../public/emojis/laptop.png" alt="Laptop emoji">
+                                <br></span> at <span class="highlight-secondary">TU Delft</span>.
+                        </div>
+                    </div>
+                </div>
+                <div id="about-passions" class="row">
+                    <div class="about-text-and-icon row align-items-center">
+                        <div class="col-9 about-text text-end">
+                            Strongly <span class="highlight-primary">passionate </span>
+                            <span>
+                                <img class="about-emoji" src="../public/emojis/heart.png" alt="Red heart emoji">
+                            </span>
+                            about <br><span class="highlight-secondary">design</span> and <span
+                                class="highlight-secondary">
+                            UI/UX</span> development.
+                        </div>
+                        <div class="col-3 about-icon">
+                            <img src="../public/emojis/rocket.png" alt="Rocket emoji">
+                        </div>
+                    </div>
+                </div>
+                <div id="about-hobbies" class="row">
+                    <div class="about-text-and-icon row align-items-start">
+                        <div class="col-4 about-icon text-end">
+                            <img src="../public/emojis/trophy.png" alt="Trophy emoji">
+                        </div>
+                        <div class="col-8 about-text">
+                            <span class="highlight-secondary">Mountain biking</span> <span>
+                            <img src="../public/emojis/bike.png" alt="Bike emoji" class="about-emoji">
+                        </span> and <br>playing <span class="highlight-secondary">drums</span> <span>
+                            <img src="../public/emojis/drum.png" alt="Drum emoji" class="about-emoji">
+                    </span> are the top <br>of my list of <span class="highlight-primary">hobbies</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--    ABOUT-->
 
+    <!--    PORTFOLIO-->
     <div id="portfolio">
-        <div id="portfolio-background"></div>
+        <div id="portfolio-background">
+            <div id="portfolio-header" class="mb-4">
+                <h1 class="text-center">
+                    <span id="portfolio-folder-emoji">
+                        <img src="../public/emojis/folder.png" alt="Folder emoji">
+                    </span>
+                    /Projects/
+                </h1>
+            </div>
+            <div id="portfolio-cards">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-xxl-7 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Ludo</h5>
+                                <p class="card-text">Ludo is a recreation of the popular board-game built with
+                                    <span class="highlight-secondary">multiplayer</span> in mind. The front-end is using
+                                    plain <span class="highlight-primary">HTML</span>,
+                                    <span class="highlight-primary">CSS</span>, and <span class="highlight-primary">Javascript</span>
+                                    while the back-end is a simple <span class="highlight-primary">Node.js</span>
+                                    server. The client communicates with the server via <span
+                                            class="highlight-secondary">Socket.io</span>.</p>
+                                <p class="card-text"><small class="text-muted">Team of 2<br>Role: Full Stack
+                                    Developer</small></p>
+                                <a href="https://github.com/ph3real/Ludo/tree/Branch" target="_blank"
+                                   class="view-on-github portfolio-view-on-github">View on GitHub<span>
+                                    <img src="../public/icons/arrow.png" alt="Right arrow icon">
+                                </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="carouselControls1" class="col-xxl-5 col-md-6 carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../public/portfolio/ludo/home.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/ludo/pre-game.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/ludo/during-game.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselControls1"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselControls1"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-xxl-7 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">To-do web app</h5>
+                                <p class="card-text">Simple web application to keep track of your tasks. It is built
+                                    with <span class="highlight-primary">Vue.js</span> and <span
+                                            class="highlight-secondary">Vuetify</span>. In addition to the basic
+                                    functions
+                                    of a to-do list, the app features a <span
+                                            class="highlight-secondary">tag system</span> along with the
+                                    ability to set a <span class="highlight-secondary">due date</span> to each task.</p>
+                                <p class="card-text"><small class="text-muted">Solo<br>Role: Full Stack
+                                    Developer</small></p>
+                                <a href="https://github.com/tonynikolaidis/todo-app" target="_blank"
+                                   class="view-on-github portfolio-view-on-github">View on GitHub<span>
+                                    <img src="../public/icons/arrow.png" alt="Right arrow icon">
+                                </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="carouselControls2" class="col-xxl-5 col-md-6 carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../public/portfolio/todo-web-app/tasks-done.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/todo-web-app/tasks-done.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/todo-web-app/edit-task.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselControls2"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselControls2"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-xxl-7 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Paroot</h5>
+                                <p class="card-text">Paroot is a <span
+                                        class="highlight-secondary">QnA application</span> written in <span
+                                        class="highlight-primary">Java</span> meant to be used
+                                    during university lectures. It was created for the
+                                    Object-Oriented Programming Project course of TU Delft.
+                                    The client is built with <span class="highlight-primary">JavaFX</span> while the
+                                    server uses <span class="highlight-secondary">Spring</span>
+                                    alongside an <span class="highlight-secondary">H2 database</span>.</p>
+                                <p class="card-text"><small class="text-muted">Team of 6<br>Role: Front-end
+                                    Developer</small></p>
+                            </div>
+                        </div>
+                        <div id="carouselControls3" class="col-xxl-5 col-md-6 carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../public/portfolio/paroot/home.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/paroot/upvote.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/paroot/vote-on-poll.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../public/portfolio/paroot/poll-results.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselControls3"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselControls3"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--    PORTFOLIO-->
 
+    <!--    CONTACT-->
     <div id="contact">
-        <div id="contact-background"></div>
+        <div id="contact-background">
+            <div id="contact-background-shapes"></div>
+            <div id="contact-content-container" class="row align-items-center">
+                <div class="col">
+                    <div class="row mb-5 text-center" id="contact-header"><h1>Get in touch</h1></div>
+                    <div class="row text-center contact-info"><p><span><img class="me-3"
+                                                                            src="../public/emojis/pen.png"
+                                                                            alt="Pen emoji"></span>Tony
+                        Nikolaidis</p></div>
+                    <div class="row text-center contact-info"><p><span><img class="me-3"
+                                                                            src="../public/emojis/mail.png"
+                                                                            alt="Envelope emoji"></span>tony@infopelago.gr
+                    </p></div>
+                    <div class="row mb-5 text-center contact-info"><p><span><img class="me-3"
+                                                                                 src="../public/emojis/round-pushpin.png"
+                                                                                 alt="Round pushpin emoji"></span>Delft,
+                        The
+                        Netherlands
+                    </p></div>
+                    <div class="row text-center" id="contact-links">
+                        <a class="col p-0 mx-1" href="https://github.com/tonynikolaidis" target="_blank">
+                            <img id="contact-github-icon" class="contact-link" src="../public/contact/github-dark.png"
+                                 alt="GitHub icon">
+                        </a>
+                        <a class="col p-0 mx-1" href="https://twitter.com/tonynikolaidis" target="_blank">
+                            <img id="contact-twitter-icon" class="contact-link" src="../public/contact/twitter-dark.png"
+                                 alt="Twitter icon">
+                        </a>
+                        <a class="col p-0 mx-1" href="https://www.linkedin.com/in/tony-nikolaidis-a86aba181/"
+                           target="_blank">
+                            <img id="contact-linkedin-icon" class="contact-link"
+                                 src="../public/contact/linkedin-dark.png"
+                                 alt="LinkedIn icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--    CONTACT-->
 
     <div id="footer">
         <div id="footer-background">
             <div id="footer-row" class="row">
-                <div class="col"></div>
-                <div class="col text-center">
+                <div class="col-0 col-sm-4"></div>
+                <div class="col-12 col-sm-4 text-center"> <!-- ps-0 -->
                     <span id="footer-copyright" class="footer-text">Copyright 2021. All rights reserved.</span>
                 </div>
-                <div class="col text-end">
-                    <a id="footer-github" class="footer-text">View on GitHub
-                        <span id="footer-arrow" class="footer-text">&rarr;</span>
+                <div class="col-12 col-sm-4 text-center text-sm-end"> <!-- ps-0 -->
+                    <a id="footer-github" class="footer-text view-on-github footer-view-on-github">View on GitHub
+                        <span id="footer-arrow" class="footer-text"><img src="../public/footer/arrow.png" alt="Arrow icon"></span>
                     </a>
                 </div>
             </div>
@@ -132,5 +393,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
 
 <script src="scripts/navbarAndHome.js"></script>
+<script src="scripts/about.js"></script>
+<script src="scripts/portfolio.js"></script>
+<script src="scripts/contact.js"></script>
 </body>
 </html>
